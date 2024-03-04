@@ -27,7 +27,7 @@ function formValidation() {
 function passid_validation(passid, mx, my) {
     var passid_len = passid.value.length;
     if (passid_len == 0 || passid_len >= my || passid_len < mx) {
-        alert("Password should not be empty / length be between " + mx + " to " + my);
+        alert("Invalid Password!! Length should be" + mx + " to " + my);
         passid.focus();
         return false;
     }
@@ -89,7 +89,7 @@ function ValidateEmail(uemail) {
         x++;
     }
     if (x == 0) {
-        alert('Select Male/Female');
+        alert('Please Slect your Gender');
         umsex.focus();
         return false;
     }
