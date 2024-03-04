@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+            width: 70%;
+            margin-left: 40px;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 70%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            outline: none;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            background-color: #2e9731;
+            font-size: medium;
+        }
+
+        .reg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <h1>Registeration Form</h1>
+            <hr>
+            <label> Firstname: </label><br>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required /><br>
+            <label> Lastname: </label><br>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required /><br>
+            <label for="psw">Password</label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <label for="email">Email</label><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br>
+            <label> Phone : </label><br>
+            <input type="text" name="phone" placeholder="phone no." size="10" required><br>
+            <div>
+                <label> Gender : </label><br>
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Male" name="gender"> Male
+                <input type="radio" value="Other" name="gender"> Other
+            </div>
+            <div>
+                <label>Languages Known</label>
+                <select>
+                    <option value="Language">Language</option>
+                    <option value="English">English</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Tamil">Tamil</option>
+                </select>
+            </div>
+
+            <h4>Address:</h4>
+            <textarea cols="80" rows="3" placeholder="Current Address" value="address" required>
+</textarea><br>
+            <label for="birthday">DOB:</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <div class="reg">
+                <button type="submit">Register</button>
+            </div>
+
+    </form>
+</body>
+
+</html>
