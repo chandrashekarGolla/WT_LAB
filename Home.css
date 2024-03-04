@@ -12,7 +12,7 @@ body{
     overflow: hidden;
     margin:10px;
     font-family: Calibri, Helvetica, sans-serif;
-    /* background-image:url("./bg.jpg"); */
+    background-image:url("./Images/bg-2.jpg");
     opacity: 90%;
 }
 .logo{
@@ -23,7 +23,7 @@ body{
     display : flex;
     justify-content: space-between;
     padding: 10px 40px 30px 10px;
-    background-color:  rgb(238, 234, 186);
+    /* background-color:  rgb(238, 234, 186); */
 }
 .navigations{
     display : flex;
