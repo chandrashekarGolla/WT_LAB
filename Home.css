@@ -12,7 +12,8 @@ body{
     overflow: hidden;
     margin:10px;
     font-family: Calibri, Helvetica, sans-serif;
-    background-image:url("./Images/bg-1.jpg");
+    background-image:url("./Images/bg-4.jpg");
+    background-size: cover;
     opacity: 90%;
 }
 .logo{
@@ -48,9 +49,11 @@ a {
 a:hover, a:active {
     background-color:rgb(28, 224, 208);
     color:white;
+    border-radius: 10px 10px;
 }
 .cc{
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(238, 219, 219);
     display: inline-block;
     height: 100%;
     border-radius: 5px;
@@ -58,7 +61,7 @@ a:hover, a:active {
 }
 
 .links{
-    padding:15px;
+    padding:10px;
     text-align: center;
 }
 .content{

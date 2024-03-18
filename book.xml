@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book*)>
+    <!ELEMENT book (title, author, isbn, publisher, edition, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT isbn (#PCDATA)>
+    <!ELEMENT publisher (#PCDATA)>
+    <!ELEMENT edition (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST book id ID #IMPLIED>
+]>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<bookstore>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <isbn>9780743273565</isbn>
+        <publisher>Charles Scribner's Sons</publisher>
+        <edition>First Edition</edition>
+        <price>$10.99</price>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <isbn>9780061120084</isbn>
+        <publisher>Harper Perennial Modern Classics</publisher>
+        <edition>Special Edition</edition>
+        <price>$12.50</price>
+    </book>
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <isbn>9780451524935</isbn>
+        <publisher>Signet Classics</publisher>
+        <edition>Reprint Edition</edition>
+        <price>$9.99</price>
+    </book>
+</bookstore>

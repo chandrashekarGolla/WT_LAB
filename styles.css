@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: grey;
+    color: white;
+  }
+  
+  td:nth-child(2) {
+    color: blue; 
+    font-weight: bold;
+  }
+
+  
